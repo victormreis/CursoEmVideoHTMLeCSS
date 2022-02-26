@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: aqua;
+    color: blue;
+    width: 500px;
+    text-align: center;
+}
+
+div {
+    font-size: 16px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+div>ul {
+    display: none;
+}
+
+div:hover>ul {
+    display: block;
+}
+
+p {
+    font-size: medium;
+}
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+a:hover { 
+    text-decoration: underline;   
+
+}
+a:active {
+    color: blue;
+}
+
+.especial::after{
+    content: '[link]';
+    font-size: smaller;
+    color: gray;
+    text-decoration: none;
+}
+
+
+
+.index {
+    font-family: serif;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
