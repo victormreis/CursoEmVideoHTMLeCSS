@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com Google Fonts</title>
+    <style>    
+        /* Estamos utilizando no bloco abaixo a importação de fontes externas utilziando o google fonts,. desta maneira podemos usar a fonte que quisermos em nosso site sem precisar baixar a fonte e instalar localmente seja em nossa maquina ou na maquina do usuario final. para isso é necessario  utilizar a tag "@import" como nos exemplos utilizados abaixo*/   
+        
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500&display=swap');
+        @font-face {
+            font-family: 'Love';
+            src: url('fontes/love.ttf') format('truetype'), url('fontes/love.otf') format('opentype');
+        }
+ 
+
+        h1{
+            font-family: Love, sans-serif;
+            font-size: 2em;
+            color: black;
+        }
+
+        p {
+            font-family:'Indie Flowe', sans-serif;
+            font-size: 1em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, veritatis! Molestias veritatis, amet quam reiciendis incidunt nihil exercitationem a quisquam, veniam repudiandae perferendis suscipit numquam similique alias doloribus pariatur. Nesciunt.</p>
+    <h2>Teste de fonte</h2>
+    
+</body>
+</html>

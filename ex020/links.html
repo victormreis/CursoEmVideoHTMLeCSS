@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        LEGENDA DOS SELETORES PERSONALIZADOS
+        *   = GLOBAL
+        #   = ID
+        .   = CLASS
+        :   = PSEUDO-CLASS
+        ::  = PSEUDO-ELEMENT
+        >   = CHILDREN (FILHO)
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(97, 32, 158);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blueviolet;
+
+        }
+
+        /* no estilo acima foi incluido a pseudo Classe "visited" serve para modificar valores quadno o usuario já visitou o link em questao.
+        */
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* 
+        Hoover já visto anteriormente serve para alterar os valores toda vez que o usuario passar ou descaansar o mouse em cima do elemento, no caso um link.
+        */
+
+        a:active {
+            color: brown;
+        }
+        .especial {
+            background-color: rgba(55, 109, 109, 0.671);
+            width: 200px;
+            height: 20px;
+            padding: 5px;
+            border: 1px solid violet;
+        }
+        /* 
+        e usndo a pseudo classe "active" podemos modificar a propriedade de um ou mais elementos quando o usuario executar a ação de clique: .       
+         */
+        .especial::before {
+            content: ' ⇒ ';
+        }
+        .especial::after {
+            content: ' ⇐ ';
+            text-decoration: none;
+            font-weight: normal;
+            
+        }
+
+        /*
+        Acima foi utilziado o " :: " que indica que estamos utilziando um pseudo elemento, o "::after" siginiifica que tudo que vier dps do conteudo (neste caso um link) irá receber as propriedades definidas. podemos utilziar tbm o "::before" para definir as propriedades antes do link.
+        */
+    </style>
+</head>
+
+<body>
+    <h1> Personalizando Links</h1>
+    <ul>
+        <li class="especial"><a href="https://youtube.com" target="_blank">Canal no Youtube</a></li>
+        <li><a href="https://google.com" target="_blank">Google</a></li>
+        <li><a href="https://facebook.com" target="_blank">Site O Mano na Bolsa</a></li>
+    </ul>
+
+
+</body>
+
+</html>

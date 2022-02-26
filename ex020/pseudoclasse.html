@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 2px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+/* Utilizamos a Div para dividir o nosso conteudo em uma especie de blocos, assim como podemos usar o ID ou CLASS*/
+        div:hover {
+            background-color: yellow;
+           
+        }
+        /* Toda Vez que quisermos utilziar uam pseudoclasse precisamos usar o " : " para identeificar qual elemento estaráa utilizando ess pseudo classe. No caso acima foi utlizado o comando Hover que serve para definir um estado, ou seja toda vez que o usuario passar ou descansar o cursor do mouse em cima do elemento marcado, alguma ação irá acontecer, no caso deste exemplo apenas mudei a cor de fundo do elemento. */
+    </style>
+</head>
+
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+</body>
+
+</html>

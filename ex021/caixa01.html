@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            border: 10px solid darkcyan;
+            /* Podemos sempre utilziar o shorthand para simplicficar os valores das css's resumindo tudo em uma unica linha conforme o exemplo acima*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px;
+
+            /* Podemos sempre utilziar o shorthand para simplicficar os valores das css's resumindo tudo em uma unica linha conforme o exemplo acima. para o Padding caso as medidas sejam iguais conforme acima podemos ainda resumir apenas a " Padding: 10px" que o css aplcia o valor para os 4 parametros. *** IMPORTANTE*** SEMPRE UTILIZAR AS MEDIDAS NA SEQUENCIA TOP, RIGHT, BOTTOM AND LEFT*/
+
+            margin: auto;
+
+            margin: 10px auto 15px auto;
+
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            outline: 2px dashed salmon;
+        }
+
+        a {
+            border-width: 5px;
+            border-style: inset;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de Caixa Box Level</h1>
+    <p>Páragrafos tambem são exemplos de box-level, mas os <a href="https://google.com">links sao exemplos de
+            inline-level</a>Vamos Ver como isso Funciona</p>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+TUDO QUE EM HTML É ID = EM CSS É "#"
+TUDO QUE EM HTML É CLASS = EM CSS É "."  
+*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(4,109,0);
+}
+
+h1#principal {
+    background-color: green;
+    text-align: center;    
+    color: white;
+}
+/* 
+Acima acabamos de criar um seletor Especial utilizando o "ID" nas proximas aulas aprenderemos sobre o seletor especial Class
+*/
+h2 {
+    color: rgb(51, 77, 49);
+}
+.basico {
+    background-color: aquamarine;
+    color: rgb(4, 180, 4);
+}
+
+.intermediario {
+background-color: rgb(40, 128, 91);
+color: yellow;
+}
+
+.avancado{
+    background-color: rgba(165, 97, 97, 0.493);
+    color: blue;
+
+}
+.destaque {
+    
+}
